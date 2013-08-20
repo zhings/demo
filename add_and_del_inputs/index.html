@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add and Delete inputs</title>
+    <style>
+        .test{
+            border: 1px solid #eee;
+            padding: 1em;
+            width: 250px;
+            margin-top: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="typo">
+    <div id="group">
+        <p class="test"><label>Text</label><input type="text"><button class="del">×</button></p>
+    </div>
+    <button class="add">Add</button>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+/*
+    这里重点使用了on方法。
+    jquery1.7以后，就删除了使用live方法。
+    这里涉及到我以前不懂的概念，为未来元素添加事件。
+    参选API：http://www.css88.com/jqapi-1.9/on/
+*/
+    $("#group").on("addInput", function(){
+        $(this).append('<p class="test"><label>Text</label><input type="text"><button class="del">×</button></p>');
+    });
+
+    $(".add").click(function(){
+        $("#group").trigger("addInput");
+    });
+
+    $("#group").on("click", "button", function(){
+        $(this).parent().remove();
+    });
+});
+</script>
+</body>
+</html
