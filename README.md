@@ -1,4 +1,4 @@
-I'm Learning Javascript now.
+Demo
 ===
 <ol>
     <li><a href="http://zhongao.github.io/learnjs/clock/">Digital Clock</a></li>
