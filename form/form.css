@@ -1,0 +1,88 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body{
+    font:500 14px Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+.container{
+    max-width: 750px;
+    *width: 750px;
+    margin: 2em auto 0;
+}
+
+/* mo-table */
+.mo-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.mo-table th, .mo-table td{
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.mo-table .nb{
+    border: none;
+}
+
+.mo-table th{
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+.mo-table th span,.mo-table td span{
+    display: inline-block;
+    padding: 0.3em 0.8em;
+}
+
+.mo-table input[type="text"], .mo-table textarea{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    border: 0;
+    padding: 0.5em 0.8em;
+    width: 100%;
+}
+
+.mo-table textarea{
+    resize : none;
+}
+
+.mo-table input[type="text"]:focus,
+.mo-table textarea:focus{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius: 0;
+    outline:0;
+    background-color: #fffdd1;
+}
+
+.mo-table input[type="text"][disabled]{
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+
+.mo-table label{
+    cursor: pointer;
+}
+
+.submit{
+    text-align: center;
+    margin-top: 1em;
+}
+.submit a{
+    margin-right: 2em;
+}
+
+.aad:hover{
+    cursor:pointer;
+}
