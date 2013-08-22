@@ -2,11 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Test Demo</title>
+    <title>Test Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/pure/buttons-min.css">
 </head>
 <body>
-
-
-
+<div id="container">
+<form>
+    <table class="edit-table">
+        <tr>
+            <td class="no-border"></td>
+            <th><span>型号</span></th>
+            <td><input type="text"></td>
+            <td class="no-border help success" colspan="3"><i class="iconfont">&#379</i></td>
+            <td class="no-border"></td>
+        </tr>
+        <tr>
+            <td class="no-border aad"><i class="iconfont" title="添加规格">&#377</i></td>
+            <th><span>规格</span></th>
+            <th><span>长</span></th>
+            <th><span>宽</span></th>
+            <th><span>高</span></th>
+            <th><span>价格</span></th>
+            <td class="no-border"></td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="error"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td class="no-border aad"><i class="iconfont">&#376</i></td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="error"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td class="no-border aad"><i class="iconfont">&#376</i></td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="error"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td class="no-border aad"><i class="iconfont">&#376</i></td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <th><span>全套组合</span></th>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number" disabled value="3999"></td>
+            <td class="no-border isOffSale"><input type="checkbox" class="regular-checkbox" title="是否特价"></td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <th><span>材质说明</span></th>
+            <td colspan="4">
+                <textarea rows="4"></textarea>
+            </td>
+            <td class="no-border"></td>
+        </tr>
+    </table>
+    <div class="form-action">
+        <a class="pure-button pure-button-large" href="#/"> 返 回 </a>
+        <a class="pure-button pure-button-primary pure-button-large pure-button-disabled"> 保 存 </a>     
+    </div>
+</form>
+</div>
 </body>
 </html>
